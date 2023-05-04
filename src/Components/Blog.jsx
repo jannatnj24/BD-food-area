@@ -11,7 +11,7 @@ const Blog = () => {
                     2.React PropTypes validators
                     1.PropTypes.any : The prop can be of any data type.
                     2.PropTypes.bool : The prop should be a Boolean.
-                    PropTypes.number : The prop should be a number.
+                    3.PropTypes.number : The prop should be a number.
                     PropTypes.string : The prop should be a string.
                     PropTypes.func : The prop should be a function.
                     PropTypes.array : The prop should be an array.
