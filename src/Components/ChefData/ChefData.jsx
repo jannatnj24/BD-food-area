@@ -3,7 +3,7 @@ import { Container, Row } from 'react-bootstrap';
 import ChefInfoCard from '../ChefInfoCard/ChefInfoCard';
 
 const ChefData = () => {
-    const [LoadCardData, setLoadCardData] = useState([]);
+    const [LoadCardData, setLoadCardData] = useState([]) ;
 
     useEffect(() => {
       fetch("http://localhost:5000/ChefData")
