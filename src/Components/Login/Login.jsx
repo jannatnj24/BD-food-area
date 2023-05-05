@@ -95,7 +95,6 @@ const Login = () => {
               </Card>
             </Col>
           </Row>
-        
         </Container>
       </div>
     );

@@ -5,8 +5,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Button, Col, Container, Row } from 'react-bootstrap';
 
-const Recipe = ({r}) => {
-    const notify = () => toast("Add to favorite");
+const Recipe = ({r,setLiked,liked}) => {
+    const handleFavorite=name=>{
+        setLiked([...liked,name])
+        toast('Added to favorite');
+    }
     const {name,cookingMethod,rating,ingredients}=r;
     return (
         <div>
@@ -30,7 +33,7 @@ const Recipe = ({r}) => {
                                    <Rating style={{ maxWidth: 100 }} value={rating} readOnly /> <span className='ms-2'>{rating}</span>
                           </div>
                      </div>
-                     <Button variant="primary" onClick={notify}>Favorite</Button>
+                     <Button variant="primary" className={`${liked.includes(name)? "disabled" : ''}`} onClick={()=>handleFavorite(name)}>Favorite</Button>
                       <ToastContainer />
                     </div>
                 </Col>

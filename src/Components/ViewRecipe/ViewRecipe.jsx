@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Recipe from './Recipe';
 import { Container, Row } from 'react-bootstrap';
 
 const ViewRecipe = () => {
     const  RecipeData=useLoaderData();
+    const [liked,setLiked] = useState([])
   
   console.log(RecipeData);
   const {ViewRecipes}=RecipeData;
@@ -16,7 +17,8 @@ const ViewRecipe = () => {
    
       {
          ViewRecipes.map(r=> <Recipe
-         
+          liked={liked} 
+          setLiked={setLiked}
          
         r={r}
          
