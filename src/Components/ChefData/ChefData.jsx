@@ -6,7 +6,7 @@ const ChefData = () => {
     const [LoadCardData, setLoadCardData] = useState([]);
 
     useEffect(() => {
-      fetch("http://localhost:5000/ChefData")
+      fetch("https://bd-food-area-server-e-jannatnj24.vercel.app/ChefData")
         .then((response) => response.json())
         .then((data) => setLoadCardData(data));
     }, []);
