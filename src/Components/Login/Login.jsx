@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Col, Button, Row, Container, Card, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+import SignInPop from '../SignInPop/SignInPop';
 
 
 
@@ -92,9 +93,13 @@ const Login = () => {
                   </div>
                 
                 </Card.Body>
+                <div>
+            <SignInPop></SignInPop>
+          </div>
               </Card>
             </Col>
           </Row>
+         
         </Container>
       </div>
     );
