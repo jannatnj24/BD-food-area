@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import ChefInfoCard from '../ChefInfoCard/ChefInfoCard' ;
+import ChefInfoCard from '../ChefInfoCard/ChefInfoCard';
 
 const ChefData = () => {
     const [LoadCardData, setLoadCardData] = useState([]);
