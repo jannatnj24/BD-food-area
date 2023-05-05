@@ -6,13 +6,14 @@ import ViewRecipe from "../Components/ViewRecipe/ViewRecipe";
 import Login from "../Components/Login/Login";
 import Register from "../Components/register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Error from "../Components/Error/Error";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element:<Main></Main>,
-      
+      errorElement:<Error></Error>,
       children: [
         {
          path:'/',
