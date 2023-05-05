@@ -11,12 +11,12 @@ const Home = () => {
                     <div className="
                     
                     ">
-                        <h1 className='text-success'>Bangladeshi Chef<br /> Is The <br /> <span className='text-color'>Best In The World</span></h1>
-                    <div className='text-success'>
+                        <h1 className='text-secondary'>Bangladeshi Chef<br /> Is The <br /> <span className='text-color'>Best In The World</span></h1>
+                    <div className='text-secondary'>
                         <h5>A chef is a professional cook and tradesman who is proficient in all aspects of food preparation, often focusing on a particular cuisine.</h5>
                     </div>
 
-                    <button className='Get-btn bg-primary rounded'>Know About</button>
+                    <button className='Get-btn bg-info rounded'>Know About</button>
                     </div>
                 </Col>
                 <Col md={6}>
